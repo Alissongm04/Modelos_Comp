@@ -139,4 +139,4 @@ print("Lista de participantes:", Participantes)
 #Usando nuestra lista de participantes...
 valores = Participantes.values()
 
-print("Puntajes:", valores)
+print("Puntajes obtenidos:", valores)
