@@ -31,3 +31,7 @@ for fila in matriz:
     fila[3] = suma  # Asignamos la suma al 4to valor
 
 print(matriz)
+
+#También pudo haber sido
+x= sum(matriz[0][:3])
+print(x)
