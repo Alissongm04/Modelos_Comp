@@ -39,7 +39,7 @@ for idx in range(2,18):
         break #esto hace que en cuanto se ejecute el primer par (en este caso), va a parar
     else :
         print('es impar')
-        continue #es para que ignore todo el código que haya debajo?
+        continue #es para que ignore todito el código que haya debajo?
 
 for letra in 'palabra':
     print(letra)
