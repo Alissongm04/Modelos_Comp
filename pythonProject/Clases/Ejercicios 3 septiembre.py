@@ -22,21 +22,43 @@ def factorial(n):
         return n * factorial(n-1)
 print("El factorial de este número es:", factorial(n))
 
-# Ejercicio 24
-numero1 = float(input("Introduce el primer número: "))
-numero2 = float(input("Introduce el segundo número: "))
-numero3 = float(input("Introduce el tercer número: "))
+# Ejercicio 2
+# valores_str = input ('Introduce 3 valores:')
+# numero1_str, numero2_str, numero3_str = valores_str.split()
+# numero1, numero2, numero3 = float(numero1_str), float(numero2_str), float(numero3_str)
+# tres_numeros = (numero1, numero2, numero3)
 
-numero1= float(numero1)
-numero2 = float(numero2)
-numero3 = float(numero3)
+numero1, numero2, numero3 = list(map(float, input('Introduce 3 valores').split()))
 
 def tres_numeros(numero1, numero2, numero3):
-    menor = min(numero1, numero2)
-    maximo = max(numero1, numero2)
-
-    if menor <= numero3 <= maximo:
-        return print('si está entre los dos números')
+    if numero1 <= numero3 <= numero2:
+        print('si está entre los dos números')
     else:
-        return print('no está entre los dos números')
+        print('no está entre los dos números')
+
+#Ejercicio 3
+def metodo1(string: str) -> int:
+    numero_espacios = 0
+    for letra in string:
+        if letra == ' ':
+            numero_espacios += 1
+        return numero_espacios
+
+print(metodo1('jaidrnvv '))
+
+def metodo2(palabra: str) -> int:
+    numero_espacios = palabra.count(' ')
+    print(f'La frase tiene {numero_espacios} espacios')
+
+cadena = input('Introduce una frase: ')
+print(metodo2(cadena))
+
+#Ejercicio 4
+def imprimir_impares(lista:list):
+    for numero in lista:
+        if numero % 2 == 1:
+            print(numero, end=' ')
+
+listado = [2, 4, 6, 23, 7, 3, 67, 23, 6]
+imprimir_impares(listado)
 
