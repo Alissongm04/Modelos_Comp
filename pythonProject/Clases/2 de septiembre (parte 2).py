@@ -48,6 +48,7 @@ def test():
 def test1():
     n = 20
     print(n)
+Esto es para hacer global una función local 
 
 print('antes de las funciones')
 test()
