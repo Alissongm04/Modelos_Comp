@@ -15,12 +15,12 @@ numero está entre los 2 primeros numeros
 numero_str = input("Introduce un número: ")
 n = int(numero_str)
 
-def factorial(n):
+def factorial(n: int) -> int:
     if n == 0 or n == 1:
         return 1
     else:
-        return n * factorial(n-1)
-print("El factorial de este número es:", factorial(n))
+        return (n * factorial(n-1))
+print("El factorial de este número es:", (factorial(n)))
 
 # Ejercicio 2
 # valores_str = input ('Introduce 3 valores:')
@@ -31,10 +31,9 @@ print("El factorial de este número es:", factorial(n))
 numero1, numero2, numero3 = list(map(float, input('Introduce 3 valores').split()))
 
 def tres_numeros(numero1, numero2, numero3):
-    if numero1 <= numero3 <= numero2:
-        print('si está entre los dos números')
-    else:
-        print('no está entre los dos números')
+        return numero1 <= numero2 <= numero3
+
+print(tres_numeros(numero1, numero2, numero3))
 
 #Ejercicio 3
 def metodo1(string: str) -> int:

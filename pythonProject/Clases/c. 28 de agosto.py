@@ -2,7 +2,7 @@
 promedio = 0 #sirve para indicar el valor inicial
 numeros = [0, 2, 4, 5, 6, 8]
 for idx in numeros:
-    promedio += idx #+= es para poner = idx + numeros?
+    promedio += idx # += es para poner promedio = promedio + idx
     print(str(idx))
 promedio /= len(numeros)
 print('el promedio es:', promedio)
@@ -67,4 +67,4 @@ restricciones:
 numero_str = input("Introduce un número del 1 al 150: ")
 n = int(numero_str)
 
-print(list(range(1, n+1)))
+print(list(range(1, n+1)))v
