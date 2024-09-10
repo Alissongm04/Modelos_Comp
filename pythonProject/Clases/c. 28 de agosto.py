@@ -67,4 +67,4 @@ restricciones:
 numero_str = input("Introduce un número del 1 al 150: ")
 n = int(numero_str)
 
-print(list(range(1, n+1)))v
+print(list(range(1, n+1)))
