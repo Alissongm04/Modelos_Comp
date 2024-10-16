@@ -88,3 +88,19 @@ print(arr_2d)
 #Ejercicio 4: Modifique los valores de las filas 3 y 4 por -5
 arr_2d[2:4, :] = -5
 print(arr_2d)
+
+#igual que
+arr_1 = ([1,2,3,4,5])
+arr_2 = ([4,5,3,4,5])
+igualque = np.equal(arr_1, arr_2)
+print(igualque)
+
+#Funciones aleatorias
+
+#numero decimal entre 0 y 1
+np.random.rand()
+print(np.random.rand())
+
+#array 1D de decimales entre 0 y 1
+d1 = np.random.rand(4)
+print(d1)
